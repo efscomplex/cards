@@ -1,4 +1,4 @@
-@mixin getColorTheme{
+@mixin getColorCustomProperties{
     --primary:#375A7F;
     --secondary:#444444;
     --text:#FFFFFF;
@@ -6,4 +6,16 @@
     --warning:#F39C12;
     --danger:#222222;
     --success:#00BC8C;
+}
+@function getColor($color:'primary'){
+    $colorMap:(
+        primary:#375A7F,
+        secondary:#444444,
+        text:#FFFFFF,
+        info:#3498DB,
+        warning:#F39C12,
+        danger:#222222,
+        success:#00BC8C
+    );
+    @return map-get($colorMap,$color);
 }

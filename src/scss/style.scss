@@ -1,8 +1,8 @@
-@import 'utils/all';
 @import 'layout';
-@import 'color-theme';
 @import 'components';
+@import 'color-theme';
 @import 'typography';
+@import 'utils/all';
 
 // * Enabling Fontawesome  * //
 @import 'fontawesome'; //*todo See README.md in scss folder
@@ -11,6 +11,9 @@
 // *? utils ** //
 @include hard-reset; // ** from utils/reset 
 
+// *? color Theme ** //
+@include colorTheme;
+
 //  *? components ** // 
 @include components;
 
@@ -18,8 +21,6 @@
 // ** templates ** //
 @include templates;
 
-// *? color Theme ** //
-@include colorTheme;
 
 // *? margins and typography ** //
 @include typography;

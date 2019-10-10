@@ -1,0 +1,17 @@
+mixin card(card)
+    div&attributes(attributes)
+        if card.mainImg
+            img.card-img(src=card.mainImg) 
+        .card-header
+            if card.title
+                h1.title= card.title
+            if card.subtitle
+                h3.subtitle= card.subtitle
+        if card.text
+            .card-body
+                p.card-text !{card.text}
+        else if card.body
+            .card-body !{card.body}
+        if block
+            .card-footer
+                block

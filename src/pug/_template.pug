@@ -9,21 +9,10 @@ html(lang="en")
         link(rel="stylesheet", href="/css/style.css")
         title= siteTitle
     body
-        header.header.wrapper
-            .wrapper
-                img.logo(src="/assets/img/user.svg" alt="@efscomplex")
-                h1.author= author
-            nav
-                +menu(routes).menu
-            .social-bar
-                i.fab.fa-facebook
-                i.fab.fa-instagram
-                i.fab.fa-linkedin
-            input.search(placeholder="find articles")
+        header.header
+            h1 Cards
         main.main
             block main
-        aside.aside
-            block aside
         footer.footer
             block footer
         block scripts

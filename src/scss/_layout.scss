@@ -2,26 +2,29 @@
    body {
         min-height:100vh;
         display:grid;
-        grid-template-areas: 'header header' 
-                            'main aside' 
-                            'footer footer';
-        grid-template-columns: 60vw 1fr;
-        grid-template-rows: 1fr minmax(70vh,auto) 1fr;
+        grid-template-areas: 'header' 
+                            'main' 
+                            'footer';
+        //grid-template-columns: 60vw 1fr;
+        grid-template-rows: fit-content(0) 1fr fit-content(0);
         @include setGridAreas(
-            'header','main','aside','footer'
+            'header','main','footer'
         );  
         .header { 
             padding:1rem 5vw;
             justify-content: space-between;
-            & > * { margin-right:1rem; }
-            .logo { height:3rem; }
+            text-align:center;
         }
         .main {
             padding-top:3rem;
         }
-        .field {
-            margin-bottom:1rem;
+        .cards {
+            margin:2rem;
+            .card-edteam {
+                grid-area:1 / 1 / 3 / 2;
+            }
         }
+        .card {margin:2rem;}
    }
 }
 

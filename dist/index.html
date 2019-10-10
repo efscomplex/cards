@@ -8,43 +8,82 @@
     <title>Grid Templates</title>
   </head>
   <body>
-    <header class="header wrapper">
-      <div class="wrapper"><img class="logo" src="/assets/img/user.svg" alt="@efscomplex"/>
-        <h1 class="author">@efscomplex</h1>
-      </div>
-      <nav>
-        <ul class="menu">
-          <li><a href="/pug/views/home.html">Home</a></li>
-          <li><a href="/pug/views/about.html">About Us</a></li>
-          <li><a href="/pug/views/contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="social-bar"><i class="fab fa-facebook"></i><i class="fab fa-instagram"></i><i class="fab fa-linkedin"></i></div>
-      <input class="search" placeholder="find articles"/>
+    <header class="header">
+      <h1>Cards</h1>
     </header>
     <main class="main">
-      <div class="articles" id="articles">
-        <article class="card">
-          <h1>Cuando te alejas de toda filosofia de vida</h1>
-          <div class="main-content">
-            <p class="main-text">Para los soñadores que se olvidan de lo que tienen delante, esos que atestiguan una vida falsa repleta de experiencias sin sentido... Hay algo tan sutil solo apreciable en el pacífico momento del presente intemporal en que los sueños se derrumban y solo la realidad manifiesta sucede sin obstáculos ni forma aparente.</p>
-          </div>
-          <button class="btn">Continue Reading</button>
-        </article>
-        <article class="card-article">
-          <aside><img class="banner img" src="https://cdn.magdeleine.co/wp-content/uploads/2019/09/a-cluster-of-bronzed-leaves-1400x933.jpg"/></aside>
-          <aside>
-            <h1>Autointeresados</h1>
-            <div class="main-content">
-              <p class="main-text">Puede alguien autointeresado en promocionar sus propios intereses hacerse cargo de lo que supone la responsabilidad? Atajas la responsabilidad como si de un ejercicio moral se tratase. Nada mas lejos de lo que realmente acontece cuando ejerces la responsabilidad de quien busca algo fuera de la cotidianidad, un amor no sujeto a valores sociales, arquetipos, ideologias y ni mucho menos paradigmas tocados por el pensamiento corriente. La tension en prueva de fuego para el verdadero yogui, alguien que deja y a la vez no deja que lo mundano sobrelleve su vida...</p>
-            </div>
-            <button class="btn">Continue Reading</button>
-          </aside>
-        </article>
+      <div class="cards wrapper">
+              <div class="card card-edteam">
+                <div class="card-header">
+                  <h1 class="title">Compilado</h1>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Conviverte el código a binarios que lee el sistema operativo.</p>
+                </div>
+                <div class="card-footer"><img class="img" src="/assets/card-edteam/diagram.png"/>
+                  <div class="floating"><img class="img" src="/assets/card-edteam/go.png"/></div>
+                </div>
+              </div>
+              <div class="card card-primary">
+                <div class="card-header">
+                  <h1 class="title">Header</h1>
+                </div>
+                <div class="card-body"><article>
+        <h1 style="font-size:2.2rem;"> title of my article</h1>
+        <p> a paragraph lorem ipsum </p>
+        <footer> a footer of my article </footer>
+    </article></div>
+              </div>
+              <div class="card card-info">
+                <div class="card-header">
+                  <h1 class="title">Header</h1>
+                </div>
+                <div class="card-body"><article>
+        <h1 style="font-size:2.2rem;"> title of my article</h1>
+        <p> a paragraph lorem ipsum </p>
+        <footer> a footer of my article </footer>
+    </article></div>
+              </div>
+              <div class="card card-warning">
+                <div class="card-header">
+                  <h1 class="title">Header</h1>
+                </div>
+                <div class="card-body"><article>
+        <h1 style="font-size:2.2rem;"> title of my article</h1>
+        <p> a paragraph lorem ipsum </p>
+        <footer> a footer of my article </footer>
+    </article></div>
+              </div>
+              <div class="card card-secondary">
+                <div class="card-header">
+                  <h1 class="title">Header</h1>
+                </div>
+                <div class="card-body"><article>
+        <h1 style="font-size:2.2rem;"> title of my article</h1>
+        <p> a paragraph lorem ipsum </p>
+        <footer> a footer of my article </footer>
+    </article></div>
+              </div>
+              <div class="card card-danger">
+                <div class="card-header">
+                  <h1 class="title">Header</h1>
+                </div>
+                <div class="card-body"><article>
+        <h1 style="font-size:2.2rem;"> title of my article</h1>
+        <p> a paragraph lorem ipsum </p>
+        <footer> a footer of my article </footer>
+    </article></div>
+              </div>
+              <div class="card card-article" id="card-article"><img class="card-img" src="https://images.unsplash.com/photo-1537655226665-44b4f7ad2351?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+                <div class="card-header">
+                  <h1 class="title">Adventure Cheescake Brownie</h1>
+                </div>
+                <div class="card-body"><article>
+        <p> We will build a small game during this tutorial. You might be tempted to skip it because you’re not building games — but give it a chance. The techniques you’ll learn in the tutorial are fundamental to building any React app, and mastering it will give you a deep understanding of React. </p>
+    </article></div>
+              </div>
       </div>
     </main>
-    <aside class="aside">
-    </aside>
     <footer class="footer">
       <p>powered by @efscomplex</p>
     </footer>

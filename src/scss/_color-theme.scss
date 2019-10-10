@@ -2,7 +2,7 @@
 
 @mixin colorTheme {
     body {
-        @include getColorTheme;
+        @include getColorCustomProperties;
         background-color:#222;
         color:var(--text);
         .header {
@@ -17,4 +17,23 @@
         background-color:var(--text); 
         color:var(--secondary);
     }
+
+    $card-bg-c:transparent !default;
+    $card-header-bg-c:transparent !default;
+    .card{
+        .card-header{
+            background-color:var(--card-header-bg-c,#{$card-header-bg-c});
+        }
+        background-color:var(--card-bg-c,#{$card-bg-c});
+    }
+    $colors:('primary','secondary','info','danger','warning');
+    @each $color in $colors {
+        .card-#{$color}{
+            $c:getColor($color);
+            @if $c==null {$c:rgba(white,0);}
+            --card-bg-c:#{$c};
+            --card-header-bg-c:#{lighten($c,20)};
+        }
+    }
+
 }
